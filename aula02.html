@@ -16,21 +16,34 @@
     <h1>A maior parte esta no console...</h1>
 
     <hr />
-    <p href=""   onclick="teste()">
-      Executar uma função com onclick
-    </p>
-    <hr /> 
-    <button class="btn btn-primary" onclick="teste()">
-        Qualquer onclick funciona
-      </button>
-      
+    <p href="" onclick="teste()">Executar uma função com onclick</p>
     <hr />
-      <button class="btn btn-primary" onclick="somar(1,2)">
-        Executar arrow functions não muda em nada a experiencia
-      </button>
+    <button onm class="btn btn-primary" onclick="teste()">
+      Qualquer onclick funciona
+    </button>
 
-      <hr>
-      <button class="btn btn-primary" onclick="variaveisArray()">Aprender sobre arrays</button>
+    <hr />
+    <button class="btn btn-primary" onclick="somar(1,2)">
+      Executar arrow functions não muda em nada a experiencia
+    </button>
+
+    <hr />
+    <button class="btn btn-primary" onclick="variaveisArray()">
+      Aprender sobre arrays
+    </button>
+
+    <hr />
+    Calculadora
+    <hr />
+
+    <button class="btn btn-dark" onclick="calcular('+')">+</button>
+    <button class="btn btn-dark"  onclick="calcular('-')">-</button
+    >
+    <button class="btn btn-dark" onclick="calcular('*')" >*</button>
+    <button class="btn btn-dark" onclick="calcular('/')" >/</button
+    > 
+    <button class="btn btn-dark" onclick="calcular('Merendar')" >Merendar</button
+        > 
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -38,5 +51,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="/js/aula02.js"></script>
+    <script src="/js/aula02_calculadora.js"></script>
   </body>
 </html>

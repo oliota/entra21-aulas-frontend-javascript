@@ -15,3 +15,5 @@ Repositório com as práticas realizadas em aula
 |------|---------|
 |Aula 01 | Introdução ao Javascript : console + variaveis + operadores
 |Aula 02 | Funções   
+|Aula 03 | Acessar e manipular o document   
+|Aula 04 | Acessar e manipular o document com jQuery   
