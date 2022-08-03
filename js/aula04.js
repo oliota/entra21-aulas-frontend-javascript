@@ -27,3 +27,41 @@ function criarLinha() {
 $("#excluirLinhas").on("click",function(){
     $(".alert").remove()
 })
+
+
+console.group("Exercicio criar varios conteudos com jQuery")
+
+$("<table>",{class:"table table-dark"}).append(
+  $("<thead>",{class:"bg-dark"}).append(
+    $("<th>",{text:"Nome"}),
+    $("<th>",{text:"Idade"}),
+    $("<th>",{text:"Cidade"})
+  ),
+  $("<Tbody>").append(
+    $("<tr>").append(
+      $("<td>",{text:"Fulano"}),
+      $("<td>",{text:"33"}),
+      $("<td>",{text:"Blumenau"}),
+    ),
+    $("<tr>").append(
+      $("<td>",{text:"Zé"}),
+      $("<td>",{text:"80"}),
+      $("<td>",{text:"Inbituba"}),
+    )
+  )
+).appendTo("body")
+
+console.groupEnd()
+
+console.group('Exercicio criar elementos e depois apagar tudo');
+
+
+$("#add").on("click",()=>{
+    $("<p>",{text:"Novo elemento", class:"alert alert-info"}).appendTo("body")
+})
+
+$("#limpar").on("click",()=>{
+  $(".alert").remove()
+})
+
+console.groupEnd();
