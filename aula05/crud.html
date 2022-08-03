@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container">
+    <header class="row mb-4">
+      <section class="col">
+        <div class="card">
+          <div class="card-body text-center">
+            <h1>Crud de pessoas</h1>
+            <a href="/vertical.html" class="btn btn-outline-primary me-2"
+              >Vertical</a
+            >
+            <a href="/horizontal.html" class="btn btn-outline-primary me-2"
+              >Horizontal</a
+            > 
+          </div>
+          <div class="card-footer">
+            <div class="card-body text-center"></div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section class="row">
+      <aside class="col-3">
+        <div class="card">
+          <div class="card-header">Formulário</div>
+          <form>
+            <div class="card-body">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" class="form-control" required />
+
+              <div class="row">
+                <div class="col-3">
+                  <label for="idade">Idade</label>
+                  <input type="number" id="idade" class="form-control" />
+                </div>
+                <div class="col">
+                  <label for="cidade">Cidade</label>
+                  <input
+                    type="text"
+                    id="cidade"
+                    class="form-control"
+                    value="Blumenau"
+                    readonly
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button type="submit" class="btn btn-outline-success" id="add">
+                Add
+              </button>
+              <button type="submit" class="btn btn-outline-primary" id="update">
+                Update
+              </button>
+              <button type="reset" class="btn btn-outline-danger" id="clean">
+                Clean
+              </button>
+            </div>
+          </form>
+        </div>
+      </aside>
+      <main class="col">
+        <div class="card">
+          <div class="card-header">Dados</div>
+          <div class="card-body">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+                <th></th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nome de exemplo</td>
+                  <td>Idade de exemplo</td>
+                  <td>Cidade de exemplo</td>
+                  <td>
+                    <button class="btn btn-outline-primary">Edit</button>
+                    <button class="btn btn-outline-danger">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/crud.js"></script>
+  </body>
+</html>
