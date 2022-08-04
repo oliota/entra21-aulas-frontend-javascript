@@ -30,13 +30,14 @@ $("#eco_get").on("click", () => {
   });
 });
 
-$("#demora").on("click", () => {
+$("#delay_get").on("click", () => {
   $.ajax({
     url: " https://httpbin.org/delay/" + $("#delay").val(),
     type: "get",
 
     success: function (dados) {
       console.log(dados);
+      alert("Veja os dados retornados no console...");
     },
 
     error: function (erro) {
